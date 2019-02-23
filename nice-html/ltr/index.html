@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
+    <title>SIH</title>
+
+     <!--logo font-->
+     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-navbarbg="skin6" data-theme="light" data-layout="vertical" data-sidebartype="full" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header" data-logobg="skin5">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
+                        <i class="ti-menu ti-close"></i>
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-brand">
+                        <!-- Logo icon <a href="index.html" class="logo">
+                            
+                            <b class="logo-icon">
+                                You can put here icon as well // <i class="wi wi-sunset"></i> //
+                                 Dark Logo icon
+                                <img src="../../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                                 Light Logo icon 
+                                <img src="../../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                            </b>
+                            End Logo icon -->
+                            <!-- Logo text -->
+                            <span class="logo-text">
+                                <a class="navbar-brand align-items-center"style="color:white;font-size:25px ;font-family: 'Russo One', sans-serif;" href="#">NP_Complete!</a>
+                                </a>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Toggle which is visible on mobile only -->
+                    <!-- ============================================================== -->
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="ti-more"></i>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin6">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item search-box">
+                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)">
+                                <div class="d-flex align-items-center">
+                                    <i class="mdi mdi-magnify font-20 mr-1"></i>
+                                    <div class="ml-1 d-none d-sm-block">
+                                        <span>Choose the method before scanning ;) </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <form class="app-search position-absolute">
+                                <input type="text" class="form-control" placeholder="Search &amp; enter">
+                                <a class="srh-btn">
+                                    <i class="ti-close"></i>
+                                </a>
+                            </form>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Method</a>
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti m-r-5 m-l-5"></i> Anchor Scan</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti m-r-5 m-l-5"></i> Super-Sonic</a>
+                                <!-- <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i> Inbox</a> -->
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin5">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false">
+                                <i class="mdi mdi-av-timer"></i>
+                                <span class="hide-menu">Recent Scans</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="top-10-owasp.html" aria-expanded="false">
+                                <i class="mdi mdi-account-network"></i>
+                                <span class="hide-menu">Top-10 Owasp</span>
+                            </a>
+                        </li>
+                         <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="profiling.html" aria-expanded="false">
+                                <i class="mdi mdi-arrange-bring-forward"></i>
+                                <span class="hide-menu">Profiling</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="tools-used.html" aria-expanded="false">
+                                <i class="mdi mdi-border-none"></i>
+                                <span class="hide-menu">Tools Used</span>
+                            </a>
+                        </li>
+                       <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product.html" aria-expanded="false">
+                                <i class="mdi mdi-file"></i>
+                                <span class="hide-menu">About the Product</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="error-404.html" aria-expanded="false">
+                                <i class="mdi mdi-alert-outline"></i>
+                                <span class="hide-menu">404</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-5 align-self-center">
+                        <h4 class="page-title">Scan</h4>
+                    </div>
+                    <div class="col-7 align-self-center">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Scan</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Email campaign chart -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Scan graph</h4>
+                                <div class="sales ct-charts mt-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title m-b-5">Total Vulnerabilities</h5>
+                                <h3 class="font-light">the value</h3>
+                                <div class="m-t-20 text-center">
+                                    <div id="earnings"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title m-b-0">Current Scan</h4>
+                                <h2 class="font-light">35,658 <span class="font-16 text-success font-medium">+23%</span></h2>
+                                <div class="m-t-30">
+                                    <div class="row text-center">
+                                        <div class="col-6 border-right">
+                                            <h4 class="m-b-0">58%</h4>
+                                            <span class="font-14 text-muted">Last-to-last Scan</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <h4 class="m-b-0">42%</h4>
+                                            <span class="font-14 text-muted">Last Scan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================================== -->
+                <!-- Email campaign chart -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Ravenue - page-view-bounce rate -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Scan-history</h4>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-top-0">DATE</th>
+                                            <th class="border-top-0">TYPE</th>
+                                            <th class="border-top-0">STATUS</th>
+                                            <th class="border-top-0">TIME</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    
+                                        <tr>
+                                            <td class="txt-oflo">April 19, 2018</td>
+                                            <td class="txt-oflo">Anchor</td>
+                                            <td><span class="label label-success label-rounded">very-light</span></td>
+                                            <td><span class="font-medium">46mins</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-oflo">April 18, 2018</td>
+                                            <td class="txt-oflo">Anchor</td>
+                                            <td><span class="label label-purple label-rounded">light</span></td>
+                                            
+                                            <td><span class="font-medium">59mins</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-oflo">April 29, 2017</td>
+                                            <td class="txt-oflo">Super-sonic</td>
+                                            <td ><span class="label label-success label-rounded">very-light</span> </td>
+                                            
+                                            <td><span class="font-medium">10mins</span></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td class="txt-oflo">April 20, 2017</td>
+                                            <td class="txt-oflo">Super-sonic</td>
+                                            <td><span class="label label-purple label-rounded">light</span></td>
+                                            
+                                            <td><span class="font-medium">15mins</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-oflo">April 15, 2017</td>
+                                            <td class="txt-oflo">Super-sonic</td>
+                                            <td><span class="label label-info label-rounded">heavy</span></td>
+                                            
+                                            <td><span class="font-medium">72mins</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-oflo">April 13, 2017</td>
+                                            <td class="txt-oflo">Anchor</td>
+                                            <td><span class="label label-danger label-rounded">Juggernaut</span> </td>
+                                            
+                                            <td><span class="font-medium">90mins</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Ravenue - page-view-bounce rate -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Recent comment and chats -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Download results</h4>
+                            </div>
+                            <div class="comment-widgets" style="height:430px;">
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row m-t-0">
+                                        <!-- <div class="p-2">
+                                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExIVFRMVEhUVFxcSFRUVFxgVFRUWFhUVGBUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAIAAECAwcGBQT/xABTEAABAgMDBggHDAgEBQUAAAABAAIDBBEhMUEFBgcIElETFCJhcYGxsiUydJGzwdEVNDVCUlNyhJKTocQjJERUYoK08BZzg+EXM0OUpEVjZKPx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANxSSUHmlyCRKHbWK9/wa/uw7xREMQ7axnv+D5OO85BlDhRJoWw6veTIEfjvDQYcXZ4ts8IwOpXjFaVuuHmWyw81JEj3nL/dM9iAOqjqTOCMn/Ccj+5y/wB0z2KuLmrIj9jl/umexAHQCeoRiQs1ZE/scvXdwTPYrP8ACcj+5y/3TPYgDdwTAIxomakiB7zl/umexNDzVkTfJy9d3BM9iAOzRJwRkf4Tkf3OX+6Z7FF+akjT3nL/AHTPYgDdSNAjDh5rSJNsnL9HBM9i5LS7m9KQslTD4ctBY8BlHMhtaRy2iwgIMBzWzijyEdsxLuoRY5p8V7cWuGIRTZkZ4QMpS4iwjR4siQyeUx3PvBwOKEGHWtlvMvZzZzhjSEdseXdRwNHNPiubixwxCAxwUqrncx88IGUpcRYRo8UESGTymO3c43HFdEQgdMCqQ6tmG/er0DEp0iqNvCtlb/UguBSJSAToEkq9rzKwIEkkkgYlJoSJToKngi0dYQ86xBrPwd3Fh3iiIiPp04BDtrDM/X4NcZcefaKD3NWf9v8Aqv5hbY9uIvxG9YlqzD4Q+q/mFt730QR4YUr+HOkxmJv7FDgz42O5WsfVBGIzEX9qQjClfwUnvAFqp4MnlY7kE2NJtPUNylEZW0XpQ316VJzqWlBBsWy2wi9M1u1absB61AsLrbt3+6thxK2XEIFEZXpXD6ZH+CJkG+kP0jV3RK4TTLbkiZOFGU+8agHjMZo90JQG2szDruptXLSNL2i8wi+dkmVhmro0Fo8Te9g+TvGCzfMUeEZQ4cZh94IwnCy27nQBvmvnFHkI7ZiXdQixzT4rm4tcMQijzLztg5TgCJCOy5tBFhk8pj93O3ccVlGlnRkYZfOyLKwjV0WE34pvL2D5O8YLM82M4o8hHbMS7qEeM0+K9uLXDEIDHc0EUUGuoaHqK8LMjPCBlKXEWEaPFkSGTymO3HeNxXuO5VguxPsQOTtWC7E+oKeyKUwUGHZsPUVagqB2bDdgfUk51TQdZSea8kdZTN5NmG/2oLWtoKJgKKSaqB0kkkCVTzs3eZWEpmt86CMJuN5KHjWM9/wfJx3nIhiNm0XYjch61ibZ+D5MO8UHq6tcQjj58lFP+4W4QhXlG09ixPVoArP83FfzC2xzaWjrCC1UxRTlDzb1MxBSqixlbT1DcgaEK8o+bcrlW9mIvxG9OIgpVBGM2nKFhH4qMPlGpwwUmt2rTdgPWniMxF/agsVcVmNxGKdkQEbqXqAG1absBvQRYdo24Yb1x+mj4HmeiH6Rq7SJDraLCFxGmR9cjzO8CH6RqAdcxPhCU8ph94IvWu2jQ3dqETMVvhGU8ph94IwHw681LkEtkUpgsF0u6LjCL52SZ+jtdGgtHib3sHyd4wW7w34G9RdyrMMefmQB5mznBHkYzZiXcQ4U2m/Fe3FrhiEU2Y2d0DKMuIsE7LhQRIZPKY7cd43HFZPpd0XcFtzskz9Ha6NBaPE3vYPk7xgsxzYzijyEdsxLuoR4zT4r24scMR2IDIc2thVG2fFr1/3ivBzMzvg5SgCJBOy8ACKwnlQ3bucbiuj4MUogdjaWBORVVtdSw9RTvfbQX9iCNaWV/wBla0JmsAFEhYgkkkkgYlOkq3O2ehBKI+iHXWFZ+vQueXHeNiIiGzE39iHjWM9/wfJx3nIPa1Zh8IfVfzC2976BYbq1xKcfPko/qFt8NteUeobkFYYfGp1L6GuraE6peNm0XYhBa51LSvn2CeVTq3qbBtWm7AK5BFj6pyVXEbTlDr50zeVbgMPagi5hdaP/ANVsN9fYpquIzEX9qCxcHpmNckzJwAZ1/pGrtWu2+YYrjtM48DzPRD9I1AOmYw8IynlMPvBGGg3zLjBk/Kuc4Na2YhklxoAA68lFSc7ZI2cbgDf+kb+FqD2HjaNmGKnCdhcQvJbnXIj9rgfeN9qjEzpkT+2QK4HhG+1B7ZFVgmlzRjwRfOyTCYdro0Fo8Te9g+TvGC13/FsmbONwBvPCN/C1TGdMhSnG4FP8xvtQClmznHHkY7ZiXfRwsc0+K9uLHDEdiKfMjO+BlKAIsI0eKCJDJ5THbjvG4rD9LOa8kxzpyQmIJY4/pYDHtJaXHx2Cvi1vGC4nNjOCPIR2zEu8tcLHN+K9uLHDEdl6Aw4pryRf2JofJsOOO9eDmJnbL5RlxFgmjxQRYZPKY7n5r6FdG5tb0DpqqsOIs8ysaEDpJJIGJUQ3EqRToKfF+j2Ie9YoVn4Pkw7xRERHAC1DprCNPHoXkws/mNiD3NWlorP83FfzC2sjZtF2I3LFNWX9v+q/mFuDnUFqBi8Urgq2t2rTdgPWqw3GnJrd619IKCtzaWjrCmHilcE5K+ctrbSyt2/nQTA2rT4u7epPZS0X4jeptcCLE6CLHgiqr8b6PaoObWpF3ar4bgRYgi+HiLCPxXE6ZYlcjzP+n6Rq7pfPEG0eT1nfzIAmFEmlG7CcKWWUwViAHXBO2iNqIKmy8Y+pSgEUpShCAIwUnBHCqY1poL9+5AEjQMUttG3Bssx7edZhrHfBsHy6H6CYQZnoPjublaEGuIa9kQOANARs1oRjbQonYj8Beha0LN8LQOiJ3Cijg2Ghv370E2w7E4UkxQOkkkgSrLtm+5TJUdit6CLGVNT1Dch51jPf8Hycd5yIUHZsN2B3Ie9Ysfr8Hycd4oPX1a4tOPnyWv8A5C21rdq03YD1rE9WqGDx/m4r5/1hbZ4v0exBcqSNm0XYjcrScVUBtWm7DnQIDat+Lhzq5UkbNouxG5Wg4oK3NpaOsetNXa+j2peN9HtTubS0XYhBaAq3tpaL8RvU2uqKhVuO1YLsT6ggba2rBYMfYrWiirdDpa3zb1Nj6oIxGYi/tUeELrBZv5k73VNB1nckYVLW3j8UE2NoKBRiQ62i9PDfXpxCZ78Bf2IIcKTYBbjzK2GyigYNll+9ShxK2GwoFEZXpwKyrWJfXJsEG8T0P0EwtUiPwF6yzWJZTJsHE8eh1+4mEGYaE3VyvA6IncKKR7KoW9CY8LwOiJ3CijiPp0oIh5Fhv7VY0KDYe+9SaUEkkkkDFOmIUNul6CUSlLbkOmsGDx6F5MKdG0URDW7RqbsB60PWsWf1+D5OO85B7OrL+3/VfzC3B3PcsN1aogHH/qv5hbaBtWm7DnQVjnrsV/vqX1BNRcDnDpUkZGZiSsZscvh7NdiG1zeWxrxQl4rY4YIO/K+U81dmq+DNvLkOfl2TMEPEJ+1ThAGu5Li01AJxBxXsIE2lLLk64LOHSrk2TiGHwrozwaOZLND9k1oeW4hlRiK1Xlyum/JsRwY9sxBab3xIbC0dPBvc78EGkPvOzdjT1K+HSllypyfNw4sNsSE9r4bxVrmGoIOIKm5tLR1hBavniX8m/H+965LPHSZIyB4OI90SLjDgAOc0fxEkNb1mvMvByVpyyc9wY+HMQQT472sc0c7thxd5gUGoQaUsU18krMsisbGgva9jwCHMILXA4ghWmLWxt/YgaLfyb8VKBSnPjvquFzg0rSEjMRJWK2YMSGW7RYxhadpjXihLwbnDBdXkPKsOcl4c1AJ2IjajaFDfQtcMCCCg9RUxrxTxl8mWMrsl4EWO8O2YUN0RwaKnZYKmgJFSuOzc0syE1MQ5aE2Y4WK7ZBfDYG1oTaQ80Fm5B3kDH5WNVmGsd8GwfLofoJhajEh1tF6yvWJfXJsEGw8eh1+4mEGXaFvhaB0RO4UUcG818b+7kL+hM+F4HRE7hRRxGV6UE0xUBE33qbQgdJJJAiVWW1vuUynQVNdQ0PUUPOsYP1+D5OO85ETEApbch01hCePQvJh5tooPa1aodeP1/wDi/mFtoOzYbsDu5limrL+3/VfzC3Bw3oHqhV0zvHuzNkb4P9NCRQA4VOzW9C9pr+Gpv/Q/poKDbNCbyMjyxNxMbq/TPXi6es8Xy0FkpAcWxJgEvc00IhCygOBcTfuBXvaEfgaW6Y3poiyrWChEZRhut2TKsDSbqtfE2gOio86Dm8wswJnKbncEWshsID4kSuyCbdkAWudRdRl7QdOwmF8GNCmKXtAdDf1A1B867bV4n4bpCJBBHCw4znPGJD6FppuwWrIPMzZycJeUgQBdDgsb1gW/jVc3pYzx9z5Iuh/8+K7goXMSKuf/ACj8S1dc40JAux5uhD1rC5S256FAHiwYAN9m1ENSemgb5kHF5q5uzGVJkwoZq81iRIj6kNbXlOccTUizFe/n5ormMnQRMCK2Yg1Ae5rSxzCbqtJPJrZWvUtG1cclBknHmSOVGjBgP8EJtlP5nv8AMFomc2T2x5aPAIqIkF7SOlpp11QYZoIzuiQZjiL3foY5PB1NjIoFbNwcAesBENwVLRfjzoLpSZfLx2RB48GK1w+lDdWnnCNKVjB7GvBqHNa4HmIqgFbTK6uWZs/xQvQQloWrvnETCjSJ8Zh4WHX5LrHjqND1rgdMg8MzlbtqF/Twl5OYucBkZ+BMXMa8NiAYwn8l9mNAajnAQEzpDhUyXOmtvFI1efkFDnombTLEn/mnuPRIaQ3A5KnSDUGTjEEYjgyhu0Tk+60n/nHuPQFjEfTpWV6xLKZNgk2nj0Ov3EwtSgb8cVl+sd8GwfLofoJhBl2hRvheB0RO4UUj30QsaFj4WgdETuFFHBtJr43Z0IJBmJv7FNpTpigdJJJAxCjt0vU1W5u10IGA2r7t29D1rFmk/B8nHeKIZjqWHq50PGsZ7/g+TjvFB7OrS8Vn+fiv5hbZ430e1Ylq1wq8fHktf/IW3MdSw9RQWFopTBCrpnh+GZsbjB83FoKKtCrpocPdmbPPB/poKDa9ClTkeWFwrGqf9Z9ifS5mP7oSoMEfrMCrod3KB8aHU76AjnATaE4lMjy1biY3pnrv0AaZFyxMyMfhILnQY7CWuBFK0PKY9hvuoQURmjzSXCykBCcBBmgKuYTyXAXuhE39BtH4paRNG8vlEGJDAhTYFkUXPpc2IMem8Ib5qBHk5ktO1CmYES8Gha5toIPmPOCgM1rQBRCnpfibWV5ofJc1o6Axp9aIzMDOPj8jCmDY8jZiAYRG2O/EV60Oel+Ds5XmycXtcOtjR6kG26EbMjy4AtLoxP3z7fNRd+xlFwGhGJ4HlzeNqMDzUjPp+FFoAKAMMvspNR27o8Wn23Iscy5guydJG9zpKXJ6TCZUoTc4DtTUw7Dh4vfKLHMmAWZPkt4k5cOHRCbVAOOmUUyxNj+KF6CEqc9sg8DCkZgDkTUlBcSLhFYwNd0VAafOrtMxrlmbPPC9BCWnZdyEJrNiWoKxIErDjspaaMZywP5a+ZBbkHOHjebUyHGsWDJx4L9/IhnZJ/losn0TO8Lye7hT3HqzR9l/gWT0sTyJnJ800A/OsgRHM6yKjnOyqtEw8MSf+afRvQFhEZiL+1ZZrEurk2D5dDr9xMLVYj6LKdYlng2CTeZ6H6CYQZjoUPheB0RO4UUcRlbRehc0JtpleB0RO4UUj3UQRbE33qQUAwm03qxpQOkkkgYhOmITB29AojQRah01hHHj0LH9XFv8xtRDnlfR7UPesUaT8HyYd4oPZ1Zf/UPqv5hbe9tRQrENWhwrP8/FfzC2tzq3XC8oIBx8WtlaV9SFrTM4HLM3S4GCOsS8IH8QVoU9p2azhIfEqvY57R+k5B2SQDWlcFjU7Hizsy6JQvjzEUnZF5e91gA66ICX0KQ/A0tXHhj/APfE9i7EuI5NbN+7mXmZp5K4rJy8qKVhQWteRdt0q8jpcXFZjpN0mTEhlIQZcsfChwWiLDeKgvedq8WtcG7ND/Fcg2hjQBQIcdYeGwZRYW02zLtL6cznbJP4+Ze1/wAfH8GQ2SHCUsrE5I/CpWWZQnZnKM2Yj6xZiO8BrWjE2NY1uDQg2zV5iOEhGrcZo0O4cHDrTrquJ1gsm8HlBkX4saA09bCWnru863HMHNsSEjClzQvA2ohGMR1ruqpp1Lm9NGaLp2S2oTdqNLuMRgxLSKRIY6aAjnbTFB5OrllUPk48uTyoMfbA/wDbits6eUx/nC0bL8+JaXjRSaNZCe881GmhQqZkZ0xsmzPGIQBsLHsdUB7SRVp3GoBrzLptIOlaJPwBLwoRgwnEOiku2nPItDeZtbeftDhJaC+Yjthjx40UNH0oj6dpRoysEMY1gFA1oaBzAUCHfQTmq6PM8eiMPAy5IaT8aKRhv2QanpCIl8TdaTcgFjTI3wzOfSheghIg9GsMHJUnUVrKwwa22bNyHnTLX3YmwflQvQQkQmjgEZLkiP3WHUfyoBnz7yCZCfjS4qGtftQzb/y3WstxoDSu8FfdoncfdaT/AM09x60nWKyCHQ4E8wWtPAxD/C61hPQajrWcaJz4XkwPnT6N6ArYIrab+xZfrHfBsHy6H6CYWovZiL8RvWW6xTtrJkGn79D9BMIMs0LO8LQOiJ3CijhWmpvGG5C/oUp7rwOiJ3CiiiMxF/agsTEKLYlicIJJJJIEqnt2uhWEJ0FcN2BsKHjWM9/wfJx3nIiIjK9O9DtrCv8A1+DzS47xQexq1wyePjyU/wBQttpYWGyoIqNx9axXVmPwh9V/MLb3sqgyOa0DSrnlwmo4DnEkEMN5rYaLp80NG0lIO2oTTEjAU4WKQS36IFjT0Lr9s+LXr/vFXMbQUCCuGdmw9RXL52aOZCfcYkaFsxjfEhHZcaCg2sHUG/cutc2thVBeRya9aDJv+A0ntWTUwd4pD7aLuM1cyZLJxrBhDbIoYr+U/nG0bh0Lp2MonIqgdVxX4C0lVl5bZfu5ulWw2U6d6DPs7dE8jNvMU7UGI41c6DQAneWEUrzrzMk6CpGG8OixYsYD4pLWtPTsiq1chfO52zZeMOb/AGQRlZaHAhthQWNYxo2WMYKADoUms2bb9/MrIbMbyVYgz/OTRPJTszEmor4u3FLSdlwA5LGsFLNzQuwyPk9krLwpdhJbCY2G2tpIaKCq+l52brjgpQm/GNpP4IPLzgyHDm5eJAjCrIraO2bxaCC07wQCuVzd0SyMrMQpmE+KXwnbTdpwIrQi0U51oapicm0dYQWPdQLKNYhng6CTZWeh+gmFqkMV5R6uZZfrHfBsHy6H6CYQZdoTFMrwOiJ3Cilc6iFjQq+mVoHMIncKKJnKtNwuHtQLZJtVrSnTUQOkkkgYhM13nUlU8Vu86BOO1YLsT6gh61ibJ+D5MO8UQ0J2FxGCHjWM9/wfJx3nIPa1Z6Vn/qv5hbY91bB1ncsP1a2E8fHkpr/3C3CCacm49vOglwQpRMx9LDfgd6sVMU15Iv7EEnvwF/YkIQpRRhWWG/fvVyCprqGh6iniPwF6aMcLyfw51GHyTQ44oJthClttb0wOzYbsD6irVXFdheTggeI+nSbkzIe+0m9QYNk244+pXoKfF+j2Kb309SURwA9Sqa3ZtN3YgsYzE39iiRs2i7EblcovcALUCdEAFVFja2nqG5VBpHKIs3bl9AKCtzaWjrCy7WLNcmQafv0P0EwtVc6lpWT6w7fB0I3Az0Oz/QmLUGZaFAPdeAOaJ3Ciiey2ovxG9C5oSHheB0RO4UUxKBmvBFUgaqulbQLO1WgoHSSSQMU4CYpNcgjEZW0WFDtrDPrPwa4S48+0UQ73E2DrO5DzrEACfgjDiw7xQe1qzH4Q+q/mFt0RlelYlqzj3/8AVfzC2yI/AX9iCHCHxcd/rVrGUUOBFOffzp4b8Df2oJPZVVcIRyccCpxH4C9MIIpbfvQShsp04lSc2ooVBj8Dfgd6eI+nSgr4QtsNu7/dWQ2UtN6iIW+0lJjiLD1FBYRVUl+zYbRh7Fa99FBsPF1pP4IHhsxN/YrCFUDs2G7A+oqb30CCsnY+j2J2Nraeobkmsra7qG5N4v0exBcqXcm3DduVpcAKqtra2m7AetAzBtWm7AetZhrHfBsHy6H6CYWnkbNouxG5ZhrGmuTINP36H6CYQZZoVf4Wgcwidwoom8q34vahe0KsHuvAHNE7hRRObS0dYQWpqJNdW1MDVBJJJJAlW8blYkghDpRDvrGe/wCD5OO85EUQh21ivf8ABr+7DvFB6mraacetof1WlTT94W3worB8ZtcbQgoZMOHiuLa/JJF11ym2cifOP+072oDX4dvym+cKuLFafjCvSEF3Gonzj6fSd7VEzkT5x/2ne1AacKK0fGbXpCs4dvym+cIKBORPnH/ad7VLjUT5x9PpO9qA0osVhHjNrhaFGHFaDa4V31CC107E+cf9p3tTCcifOP8AtO9qA2OHb8pvnCjEjMp4zfOEFhmonzj/ALTvaounImER/wBp3tQGjDiNBtcOblBXcO35TfOEE/HInzj/ALTvapcbiG6I/wC072oDVfGZS1zfOFUyI0EVcOblCxBc6cifOP8AtO9qbjkT5x/2ne1AbHDt+U3zhMY7PlN84QVcbiH/AKj/ALTvak6cifOP+072oDPbEbi4UwG0LFfw7flN84QT8cifOP8AtO9qlxuJ84+v0ne1Aaxjt+U3zhZTrCuBydC2SPf0OyoP/QmEP5nInzj6/Sd7VXEmHuFHPcRfaSe1B2+hIeF4HRE7hRToWdCbq5XgdETuFFIQghs7rlaEkkCSSSQJJJJAkOmsZ7/g+TjvOSSQZOkkkgdMkkgSdJJAySSSBwmSSQJOEkkDJJJIHCZJJAkkkkCSSSQd5oR+F4HRE7hRTpJIEkkkgSSSSD//2Q==" alt="user" width="50" class="rounded-circle">
+                                        </div> -->
+                                    <div class="comment-text w-100">
+                                        <h6 class="font-medium">JSON</h6>
+                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                                        <div class="comment-footer">
+                                            <!-- <span class="text-muted float-right">April 14, 2016</span> -->
+                                            <span class="label label-rounded label-primary">Download</span>
+                                            <!-- <span class="action-icons">
+                                                <a href="javascript:void(0)">
+                                                    <i class="ti-pencil-alt"></i>
+                                                </a>
+                                                <a href="javascript:void(0)">
+                                                    <i class="ti-check"></i>
+                                                </a>
+                                                <a href="javascript:void(0)">
+                                                    <i class="ti-heart"></i>
+                                                </a>
+                                            </span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row m-t-0">
+                                    <!-- <div class="p-2">
+                                        <img src="https://www.itechbuddy.com/assets/images/html.png" alt="user" width="50" class="rounded-circle">
+                                    </div> -->
+                                    <div class="comment-text w-100">
+                                        <h6 class="font-medium">HTML</h6>
+                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                                        <div class="comment-footer">
+                                            <!-- <span class="text-muted float-right">April 14, 2016</span> -->
+                                            <span class="label label-rounded label-primary">Download</span>
+                                            <!-- <span class="action-icons">
+                                                <a href="javascript:void(0)">
+                                                    <i class="ti-pencil-alt"></i>
+                                                </a>
+                                                <a href="javascript:void(0)">
+                                                    <i class="ti-check"></i>
+                                                </a>
+                                                <a href="javascript:void(0)">
+                                                    <i class="ti-heart"></i>
+                                                </a>
+                                            </span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row m-t-0">
+                                    <!-- <div class="p-2">
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExIVFRMVEhUVFxcSFRUVFxgVFRUWFhUVGBUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAIAAECAwcGBQT/xABTEAABAgMDBggHDAgEBQUAAAABAAIDBBEhMUEFBgcIElETFCJhcYGxsiUydJGzwdEVNDVCUlNyhJKTocQjJERUYoK08BZzg+EXM0OUpEVjZKPx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANxSSUHmlyCRKHbWK9/wa/uw7xREMQ7axnv+D5OO85BlDhRJoWw6veTIEfjvDQYcXZ4ts8IwOpXjFaVuuHmWyw81JEj3nL/dM9iAOqjqTOCMn/Ccj+5y/wB0z2KuLmrIj9jl/umexAHQCeoRiQs1ZE/scvXdwTPYrP8ACcj+5y/3TPYgDdwTAIxomakiB7zl/umexNDzVkTfJy9d3BM9iAOzRJwRkf4Tkf3OX+6Z7FF+akjT3nL/AHTPYgDdSNAjDh5rSJNsnL9HBM9i5LS7m9KQslTD4ctBY8BlHMhtaRy2iwgIMBzWzijyEdsxLuoRY5p8V7cWuGIRTZkZ4QMpS4iwjR4siQyeUx3PvBwOKEGHWtlvMvZzZzhjSEdseXdRwNHNPiubixwxCAxwUqrncx88IGUpcRYRo8UESGTymO3c43HFdEQgdMCqQ6tmG/er0DEp0iqNvCtlb/UguBSJSAToEkq9rzKwIEkkkgYlJoSJToKngi0dYQ86xBrPwd3Fh3iiIiPp04BDtrDM/X4NcZcefaKD3NWf9v8Aqv5hbY9uIvxG9YlqzD4Q+q/mFt730QR4YUr+HOkxmJv7FDgz42O5WsfVBGIzEX9qQjClfwUnvAFqp4MnlY7kE2NJtPUNylEZW0XpQ316VJzqWlBBsWy2wi9M1u1absB61AsLrbt3+6thxK2XEIFEZXpXD6ZH+CJkG+kP0jV3RK4TTLbkiZOFGU+8agHjMZo90JQG2szDruptXLSNL2i8wi+dkmVhmro0Fo8Te9g+TvGCzfMUeEZQ4cZh94IwnCy27nQBvmvnFHkI7ZiXdQixzT4rm4tcMQijzLztg5TgCJCOy5tBFhk8pj93O3ccVlGlnRkYZfOyLKwjV0WE34pvL2D5O8YLM82M4o8hHbMS7qEeM0+K9uLXDEIDHc0EUUGuoaHqK8LMjPCBlKXEWEaPFkSGTymO3HeNxXuO5VguxPsQOTtWC7E+oKeyKUwUGHZsPUVagqB2bDdgfUk51TQdZSea8kdZTN5NmG/2oLWtoKJgKKSaqB0kkkCVTzs3eZWEpmt86CMJuN5KHjWM9/wfJx3nIhiNm0XYjch61ibZ+D5MO8UHq6tcQjj58lFP+4W4QhXlG09ixPVoArP83FfzC2xzaWjrCC1UxRTlDzb1MxBSqixlbT1DcgaEK8o+bcrlW9mIvxG9OIgpVBGM2nKFhH4qMPlGpwwUmt2rTdgPWniMxF/agsVcVmNxGKdkQEbqXqAG1absBvQRYdo24Yb1x+mj4HmeiH6Rq7SJDraLCFxGmR9cjzO8CH6RqAdcxPhCU8ph94IvWu2jQ3dqETMVvhGU8ph94IwHw681LkEtkUpgsF0u6LjCL52SZ+jtdGgtHib3sHyd4wW7w34G9RdyrMMefmQB5mznBHkYzZiXcQ4U2m/Fe3FrhiEU2Y2d0DKMuIsE7LhQRIZPKY7cd43HFZPpd0XcFtzskz9Ha6NBaPE3vYPk7xgsxzYzijyEdsxLuoR4zT4r24scMR2IDIc2thVG2fFr1/3ivBzMzvg5SgCJBOy8ACKwnlQ3bucbiuj4MUogdjaWBORVVtdSw9RTvfbQX9iCNaWV/wBla0JmsAFEhYgkkkkgYlOkq3O2ehBKI+iHXWFZ+vQueXHeNiIiGzE39iHjWM9/wfJx3nIPa1Zh8IfVfzC2976BYbq1xKcfPko/qFt8NteUeobkFYYfGp1L6GuraE6peNm0XYhBa51LSvn2CeVTq3qbBtWm7AK5BFj6pyVXEbTlDr50zeVbgMPagi5hdaP/ANVsN9fYpquIzEX9qCxcHpmNckzJwAZ1/pGrtWu2+YYrjtM48DzPRD9I1AOmYw8IynlMPvBGGg3zLjBk/Kuc4Na2YhklxoAA68lFSc7ZI2cbgDf+kb+FqD2HjaNmGKnCdhcQvJbnXIj9rgfeN9qjEzpkT+2QK4HhG+1B7ZFVgmlzRjwRfOyTCYdro0Fo8Te9g+TvGC13/FsmbONwBvPCN/C1TGdMhSnG4FP8xvtQClmznHHkY7ZiXfRwsc0+K9uLHDEdiKfMjO+BlKAIsI0eKCJDJ5THbjvG4rD9LOa8kxzpyQmIJY4/pYDHtJaXHx2Cvi1vGC4nNjOCPIR2zEu8tcLHN+K9uLHDEdl6Aw4pryRf2JofJsOOO9eDmJnbL5RlxFgmjxQRYZPKY7n5r6FdG5tb0DpqqsOIs8ysaEDpJJIGJUQ3EqRToKfF+j2Ie9YoVn4Pkw7xRERHAC1DprCNPHoXkws/mNiD3NWlorP83FfzC2sjZtF2I3LFNWX9v+q/mFuDnUFqBi8Urgq2t2rTdgPWqw3GnJrd619IKCtzaWjrCmHilcE5K+ctrbSyt2/nQTA2rT4u7epPZS0X4jeptcCLE6CLHgiqr8b6PaoObWpF3ar4bgRYgi+HiLCPxXE6ZYlcjzP+n6Rq7pfPEG0eT1nfzIAmFEmlG7CcKWWUwViAHXBO2iNqIKmy8Y+pSgEUpShCAIwUnBHCqY1poL9+5AEjQMUttG3Bssx7edZhrHfBsHy6H6CYQZnoPjublaEGuIa9kQOANARs1oRjbQonYj8Beha0LN8LQOiJ3Cijg2Ghv370E2w7E4UkxQOkkkgSrLtm+5TJUdit6CLGVNT1Dch51jPf8Hycd5yIUHZsN2B3Ie9Ysfr8Hycd4oPX1a4tOPnyWv8A5C21rdq03YD1rE9WqGDx/m4r5/1hbZ4v0exBcqSNm0XYjcrScVUBtWm7DnQIDat+Lhzq5UkbNouxG5Wg4oK3NpaOsetNXa+j2peN9HtTubS0XYhBaAq3tpaL8RvU2uqKhVuO1YLsT6ggba2rBYMfYrWiirdDpa3zb1Nj6oIxGYi/tUeELrBZv5k73VNB1nckYVLW3j8UE2NoKBRiQ62i9PDfXpxCZ78Bf2IIcKTYBbjzK2GyigYNll+9ShxK2GwoFEZXpwKyrWJfXJsEG8T0P0EwtUiPwF6yzWJZTJsHE8eh1+4mEGYaE3VyvA6IncKKR7KoW9CY8LwOiJ3CijiPp0oIh5Fhv7VY0KDYe+9SaUEkkkkDFOmIUNul6CUSlLbkOmsGDx6F5MKdG0URDW7RqbsB60PWsWf1+D5OO85B7OrL+3/VfzC3B3PcsN1aogHH/qv5hbaBtWm7DnQVjnrsV/vqX1BNRcDnDpUkZGZiSsZscvh7NdiG1zeWxrxQl4rY4YIO/K+U81dmq+DNvLkOfl2TMEPEJ+1ThAGu5Li01AJxBxXsIE2lLLk64LOHSrk2TiGHwrozwaOZLND9k1oeW4hlRiK1Xlyum/JsRwY9sxBab3xIbC0dPBvc78EGkPvOzdjT1K+HSllypyfNw4sNsSE9r4bxVrmGoIOIKm5tLR1hBavniX8m/H+965LPHSZIyB4OI90SLjDgAOc0fxEkNb1mvMvByVpyyc9wY+HMQQT472sc0c7thxd5gUGoQaUsU18krMsisbGgva9jwCHMILXA4ghWmLWxt/YgaLfyb8VKBSnPjvquFzg0rSEjMRJWK2YMSGW7RYxhadpjXihLwbnDBdXkPKsOcl4c1AJ2IjajaFDfQtcMCCCg9RUxrxTxl8mWMrsl4EWO8O2YUN0RwaKnZYKmgJFSuOzc0syE1MQ5aE2Y4WK7ZBfDYG1oTaQ80Fm5B3kDH5WNVmGsd8GwfLofoJhajEh1tF6yvWJfXJsEGw8eh1+4mEGXaFvhaB0RO4UUcG818b+7kL+hM+F4HRE7hRRxGV6UE0xUBE33qbQgdJJJAiVWW1vuUynQVNdQ0PUUPOsYP1+D5OO85ETEApbch01hCePQvJh5tooPa1aodeP1/wDi/mFtoOzYbsDu5limrL+3/VfzC3Bw3oHqhV0zvHuzNkb4P9NCRQA4VOzW9C9pr+Gpv/Q/poKDbNCbyMjyxNxMbq/TPXi6es8Xy0FkpAcWxJgEvc00IhCygOBcTfuBXvaEfgaW6Y3poiyrWChEZRhut2TKsDSbqtfE2gOio86Dm8wswJnKbncEWshsID4kSuyCbdkAWudRdRl7QdOwmF8GNCmKXtAdDf1A1B867bV4n4bpCJBBHCw4znPGJD6FppuwWrIPMzZycJeUgQBdDgsb1gW/jVc3pYzx9z5Iuh/8+K7goXMSKuf/ACj8S1dc40JAux5uhD1rC5S256FAHiwYAN9m1ENSemgb5kHF5q5uzGVJkwoZq81iRIj6kNbXlOccTUizFe/n5ormMnQRMCK2Yg1Ae5rSxzCbqtJPJrZWvUtG1cclBknHmSOVGjBgP8EJtlP5nv8AMFomc2T2x5aPAIqIkF7SOlpp11QYZoIzuiQZjiL3foY5PB1NjIoFbNwcAesBENwVLRfjzoLpSZfLx2RB48GK1w+lDdWnnCNKVjB7GvBqHNa4HmIqgFbTK6uWZs/xQvQQloWrvnETCjSJ8Zh4WHX5LrHjqND1rgdMg8MzlbtqF/Twl5OYucBkZ+BMXMa8NiAYwn8l9mNAajnAQEzpDhUyXOmtvFI1efkFDnombTLEn/mnuPRIaQ3A5KnSDUGTjEEYjgyhu0Tk+60n/nHuPQFjEfTpWV6xLKZNgk2nj0Ov3EwtSgb8cVl+sd8GwfLofoJhBl2hRvheB0RO4UUj30QsaFj4WgdETuFFHBtJr43Z0IJBmJv7FNpTpigdJJJAxCjt0vU1W5u10IGA2r7t29D1rFmk/B8nHeKIZjqWHq50PGsZ7/g+TjvFB7OrS8Vn+fiv5hbZ430e1Ylq1wq8fHktf/IW3MdSw9RQWFopTBCrpnh+GZsbjB83FoKKtCrpocPdmbPPB/poKDa9ClTkeWFwrGqf9Z9ifS5mP7oSoMEfrMCrod3KB8aHU76AjnATaE4lMjy1biY3pnrv0AaZFyxMyMfhILnQY7CWuBFK0PKY9hvuoQURmjzSXCykBCcBBmgKuYTyXAXuhE39BtH4paRNG8vlEGJDAhTYFkUXPpc2IMem8Ib5qBHk5ktO1CmYES8Gha5toIPmPOCgM1rQBRCnpfibWV5ofJc1o6Axp9aIzMDOPj8jCmDY8jZiAYRG2O/EV60Oel+Ds5XmycXtcOtjR6kG26EbMjy4AtLoxP3z7fNRd+xlFwGhGJ4HlzeNqMDzUjPp+FFoAKAMMvspNR27o8Wn23Iscy5guydJG9zpKXJ6TCZUoTc4DtTUw7Dh4vfKLHMmAWZPkt4k5cOHRCbVAOOmUUyxNj+KF6CEqc9sg8DCkZgDkTUlBcSLhFYwNd0VAafOrtMxrlmbPPC9BCWnZdyEJrNiWoKxIErDjspaaMZywP5a+ZBbkHOHjebUyHGsWDJx4L9/IhnZJ/losn0TO8Lye7hT3HqzR9l/gWT0sTyJnJ800A/OsgRHM6yKjnOyqtEw8MSf+afRvQFhEZiL+1ZZrEurk2D5dDr9xMLVYj6LKdYlng2CTeZ6H6CYQZjoUPheB0RO4UUcRlbRehc0JtpleB0RO4UUj3UQRbE33qQUAwm03qxpQOkkkgYhOmITB29AojQRah01hHHj0LH9XFv8xtRDnlfR7UPesUaT8HyYd4oPZ1Zf/UPqv5hbe9tRQrENWhwrP8/FfzC2tzq3XC8oIBx8WtlaV9SFrTM4HLM3S4GCOsS8IH8QVoU9p2azhIfEqvY57R+k5B2SQDWlcFjU7Hizsy6JQvjzEUnZF5e91gA66ICX0KQ/A0tXHhj/APfE9i7EuI5NbN+7mXmZp5K4rJy8qKVhQWteRdt0q8jpcXFZjpN0mTEhlIQZcsfChwWiLDeKgvedq8WtcG7ND/Fcg2hjQBQIcdYeGwZRYW02zLtL6cznbJP4+Ze1/wAfH8GQ2SHCUsrE5I/CpWWZQnZnKM2Yj6xZiO8BrWjE2NY1uDQg2zV5iOEhGrcZo0O4cHDrTrquJ1gsm8HlBkX4saA09bCWnru863HMHNsSEjClzQvA2ohGMR1ruqpp1Lm9NGaLp2S2oTdqNLuMRgxLSKRIY6aAjnbTFB5OrllUPk48uTyoMfbA/wDbits6eUx/nC0bL8+JaXjRSaNZCe881GmhQqZkZ0xsmzPGIQBsLHsdUB7SRVp3GoBrzLptIOlaJPwBLwoRgwnEOiku2nPItDeZtbeftDhJaC+Yjthjx40UNH0oj6dpRoysEMY1gFA1oaBzAUCHfQTmq6PM8eiMPAy5IaT8aKRhv2QanpCIl8TdaTcgFjTI3wzOfSheghIg9GsMHJUnUVrKwwa22bNyHnTLX3YmwflQvQQkQmjgEZLkiP3WHUfyoBnz7yCZCfjS4qGtftQzb/y3WstxoDSu8FfdoncfdaT/AM09x60nWKyCHQ4E8wWtPAxD/C61hPQajrWcaJz4XkwPnT6N6ArYIrab+xZfrHfBsHy6H6CYWovZiL8RvWW6xTtrJkGn79D9BMIMs0LO8LQOiJ3CijhWmpvGG5C/oUp7rwOiJ3CiiiMxF/agsTEKLYlicIJJJJIEqnt2uhWEJ0FcN2BsKHjWM9/wfJx3nIiIjK9O9DtrCv8A1+DzS47xQexq1wyePjyU/wBQttpYWGyoIqNx9axXVmPwh9V/MLb3sqgyOa0DSrnlwmo4DnEkEMN5rYaLp80NG0lIO2oTTEjAU4WKQS36IFjT0Lr9s+LXr/vFXMbQUCCuGdmw9RXL52aOZCfcYkaFsxjfEhHZcaCg2sHUG/cutc2thVBeRya9aDJv+A0ntWTUwd4pD7aLuM1cyZLJxrBhDbIoYr+U/nG0bh0Lp2MonIqgdVxX4C0lVl5bZfu5ulWw2U6d6DPs7dE8jNvMU7UGI41c6DQAneWEUrzrzMk6CpGG8OixYsYD4pLWtPTsiq1chfO52zZeMOb/AGQRlZaHAhthQWNYxo2WMYKADoUms2bb9/MrIbMbyVYgz/OTRPJTszEmor4u3FLSdlwA5LGsFLNzQuwyPk9krLwpdhJbCY2G2tpIaKCq+l52brjgpQm/GNpP4IPLzgyHDm5eJAjCrIraO2bxaCC07wQCuVzd0SyMrMQpmE+KXwnbTdpwIrQi0U51oapicm0dYQWPdQLKNYhng6CTZWeh+gmFqkMV5R6uZZfrHfBsHy6H6CYQZdoTFMrwOiJ3Cilc6iFjQq+mVoHMIncKKJnKtNwuHtQLZJtVrSnTUQOkkkgYhM13nUlU8Vu86BOO1YLsT6gh61ibJ+D5MO8UQ0J2FxGCHjWM9/wfJx3nIPa1Z6Vn/qv5hbY91bB1ncsP1a2E8fHkpr/3C3CCacm49vOglwQpRMx9LDfgd6sVMU15Iv7EEnvwF/YkIQpRRhWWG/fvVyCprqGh6iniPwF6aMcLyfw51GHyTQ44oJthClttb0wOzYbsD6irVXFdheTggeI+nSbkzIe+0m9QYNk244+pXoKfF+j2Kb309SURwA9Sqa3ZtN3YgsYzE39iiRs2i7EblcovcALUCdEAFVFja2nqG5VBpHKIs3bl9AKCtzaWjrCy7WLNcmQafv0P0EwtVc6lpWT6w7fB0I3Az0Oz/QmLUGZaFAPdeAOaJ3Ciiey2ovxG9C5oSHheB0RO4UUxKBmvBFUgaqulbQLO1WgoHSSSQMU4CYpNcgjEZW0WFDtrDPrPwa4S48+0UQ73E2DrO5DzrEACfgjDiw7xQe1qzH4Q+q/mFt0RlelYlqzj3/8AVfzC2yI/AX9iCHCHxcd/rVrGUUOBFOffzp4b8Df2oJPZVVcIRyccCpxH4C9MIIpbfvQShsp04lSc2ooVBj8Dfgd6eI+nSgr4QtsNu7/dWQ2UtN6iIW+0lJjiLD1FBYRVUl+zYbRh7Fa99FBsPF1pP4IHhsxN/YrCFUDs2G7A+oqb30CCsnY+j2J2Nraeobkmsra7qG5N4v0exBcqXcm3DduVpcAKqtra2m7AetAzBtWm7AetZhrHfBsHy6H6CYWnkbNouxG5ZhrGmuTINP36H6CYQZZoVf4Wgcwidwoom8q34vahe0KsHuvAHNE7hRRObS0dYQWpqJNdW1MDVBJJJJAlW8blYkghDpRDvrGe/wCD5OO85EUQh21ivf8ABr+7DvFB6mraacetof1WlTT94W3worB8ZtcbQgoZMOHiuLa/JJF11ym2cifOP+072oDX4dvym+cKuLFafjCvSEF3Gonzj6fSd7VEzkT5x/2ne1AacKK0fGbXpCs4dvym+cIKBORPnH/ad7VLjUT5x9PpO9qA0osVhHjNrhaFGHFaDa4V31CC107E+cf9p3tTCcifOP8AtO9qA2OHb8pvnCjEjMp4zfOEFhmonzj/ALTvaounImER/wBp3tQGjDiNBtcOblBXcO35TfOEE/HInzj/ALTvapcbiG6I/wC072oDVfGZS1zfOFUyI0EVcOblCxBc6cifOP8AtO9qbjkT5x/2ne1AbHDt+U3zhMY7PlN84QVcbiH/AKj/ALTvak6cifOP+072oDPbEbi4UwG0LFfw7flN84QT8cifOP8AtO9qlxuJ84+v0ne1Aaxjt+U3zhZTrCuBydC2SPf0OyoP/QmEP5nInzj6/Sd7VXEmHuFHPcRfaSe1B2+hIeF4HRE7hRToWdCbq5XgdETuFFIQghs7rlaEkkCSSSQJJJJAkOmsZ7/g+TjvOSSQZOkkkgdMkkgSdJJAySSSBwmSSQJOEkkDJJJIHCZJJAkkkkCSSSQd5oR+F4HRE7hRTpJIEkkkgSSSSD//2Q==" alt="user" width="50" class="rounded-circle">
+                                    </div> -->
+                                <div class="comment-text w-100">
+                                    <h6 class="font-medium">text</h6>
+                                    <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                                    <div class="comment-footer">
+                                        <!-- <span class="text-muted float-right">April 14, 2016</span> -->
+                                        <span class="label label-rounded label-primary">Download</span>
+                                        <!-- <span class="action-icons">
+                                            <a href="javascript:void(0)">
+                                                <i class="ti-pencil-alt"></i>
+                                            </a>
+                                            <a href="javascript:void(0)">
+                                                <i class="ti-check"></i>
+                                            </a>
+                                            <a href="javascript:void(0)">
+                                                <i class="ti-heart"></i>
+                                            </a>
+                                        </span> -->
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row m-t-0">
+                                    <!-- <div class="p-2">
+                                        <img src="../../assets/images/users/2.jpg" alt="user" width="50" class="rounded-circle">
+                                    </div> -->
+                                    <div class="comment-text w-100">
+                                        <h6 class="font-medium">XML</h6>
+                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                                        <div class="comment-footer">
+                                            <!-- <span class="text-muted float-right">April 14, 2016</span> -->
+                                            <span class="label label-rounded label-primary">Download</span>
+                                            <span class="action-icons">
+                                                <a href="javascript:void(0)">
+                                                    <i class="ti-pencil-alt"></i>
+                                                </a>
+                                                <a href="javascript:void(0)">
+                                                    <i class="ti-check"></i>
+                                                </a>
+                                                <a href="javascript:void(0)">
+                                                    <i class="ti-heart"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- column -->
+                    <!-- <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Temp Guide</h4>
+                                <div class="d-flex align-items-center flex-row m-t-30">
+                                    <div class="display-5 text-info"><i class="wi wi-day-showers"></i> <span>73<sup>°</sup></span></div>
+                                    <div class="m-l-10">
+                                        <h3 class="m-b-0">Saturday</h3><small>Ahmedabad, India</small>
+                                    </div>
+                                </div>
+                                <table class="table no-border mini-table m-t-20">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-muted">Wind</td>
+                                            <td class="font-medium">ESE 17 mph</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-muted">Humidity</td>
+                                            <td class="font-medium">83%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-muted">Pressure</td>
+                                            <td class="font-medium">28.56 in</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-muted">Cloud Cover</td>
+                                            <td class="font-medium">78%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="row list-style-none text-center m-t-30">
+                                    <li class="col-3">
+                                        <h4 class="text-info"><i class="wi wi-day-sunny"></i></h4>
+                                        <span class="d-block text-muted">09:30</span>
+                                        <h3 class="m-t-5">70<sup>°</sup></h3>
+                                    </li>
+                                    <li class="col-3">
+                                        <h4 class="text-info"><i class="wi wi-day-cloudy"></i></h4>
+                                        <span class="d-block text-muted">11:30</span>
+                                        <h3 class="m-t-5">72<sup>°</sup></h3>
+                                    </li>
+                                    <li class="col-3">
+                                        <h4 class="text-info"><i class="wi wi-day-hail"></i></h4>
+                                        <span class="d-block text-muted">13:30</span>
+                                        <h3 class="m-t-5">75<sup>°</sup></h3>
+                                    </li>
+                                    <li class="col-3">
+                                        <h4 class="text-info"><i class="wi wi-day-sprinkle"></i></h4>
+                                        <span class="d-block text-muted">15:30</span>
+                                        <h3 class="m-t-5">76<sup>°</sup></h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> -->
+                <!-- ============================================================== -->
+                <!-- Recent comment and chats -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+                All Rights Reserved by Np_Complete!
+                
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="../../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
+    <title>SIH</title>
+
+    <!--logo font-->
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->  
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-navbarbg="skin6" data-theme="light" data-layout="vertical" data-sidebartype="full" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header" data-logobg="skin5">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
+                        <i class="ti-menu ti-close"></i>
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-brand">
+                        <!-- Logo icon <a href="index.html" class="logo">
+                            
+                            <b class="logo-icon">
+                                You can put here icon as well // <i class="wi wi-sunset"></i> //
+                                 Dark Logo icon
+                                <img src="../../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                                 Light Logo icon 
+                                <img src="../../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                            </b>
+                            End Logo icon -->
+                            <!-- Logo text -->
+                            <span class="logo-text">
+                                <a class="navbar-brand align-items-center"style="color:white;font-size:25px ;font-family: 'Russo One', sans-serif;" href="#">NP_Complete!</a>
+                                </a>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Toggle which is visible on mobile only -->
+                    <!-- ============================================================== -->
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="ti-more"></i>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin6">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item search-box">
+                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)">
+                                <div class="d-flex align-items-center">
+                                    <i class="mdi mdi-magnify font-20 mr-1"></i>
+                                    <div class="ml-1 d-none d-sm-block">
+                                        <span>Choose the method before scanning ;) </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <form class="app-search position-absolute">
+                                <input type="text" class="form-control" placeholder="Search &amp; enter">
+                                <a class="srh-btn">
+                                    <i class="ti-close"></i>
+                                </a>
+                            </form>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Method</a>
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti m-r-5 m-l-5"></i> Anchor Scan</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti m-r-5 m-l-5"></i> Super-Sonic</a>
+                                <!-- <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i> Inbox</a> -->
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin5">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false">
+                                <i class="mdi mdi-av-timer"></i>
+                                <span class="hide-menu">Recent Scans</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link.active" href="top-10-owasp.html" aria-expanded="false">
+                                <i class="mdi mdi-account-network"></i>
+                                <span class="hide-menu">Top-10 Owasp</span>
+                            </a>
+                        </li>
+                         <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="profiling.html" aria-expanded="false">
+                                <i class="mdi mdi-arrange-bring-forward"></i>
+                                <span class="hide-menu">Profiling</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="tools-used.html" aria-expanded="false">
+                                <i class="mdi mdi-border-none"></i>
+                                <span class="hide-menu">Tools Used</span>
+                            </a>
+                        </li>
+                       <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product.html" aria-expanded="false">
+                                <i class="mdi mdi-file"></i>
+                                <span class="hide-menu">About the Product</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="error-404.html" aria-expanded="false">
+                                <i class="mdi mdi-alert-outline"></i>
+                                <span class="hide-menu">404</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+       
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+       
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-5 align-self-center">
+                        <h4 class="page-title">OWASP</h4>
+                    </div>
+                    <div class="col-7 align-self-center">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">top-10owasp</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th class="border-top-0">Risk</th>
+                            <th class="border-top-0">Info</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                        <tr>
+                            <td><span class="font-medium">A1:2017-Injection</span></td>
+                            <td class="txt-oflo">Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent
+                                    to an interpreter as part of a command or query. The attacker’s hostile data can trick the
+                                    interpreter into executing unintended commands or accessing data without proper authorization.</td>
+                                           
+                        </tr>
+                        <tr>
+                                <td><span class="font-medium">A2:2017-Broken Authentication</span></td>
+                                <td class="txt-oflo">Application functions related to authentication and session management are often implemented
+                                        incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit
+                                        other implementation flaws to assume other users’ identities temporarily or permanently.</td>
+                                               
+                        </tr>
+                        <tr>
+                            <td><span class="font-medium">A3:2017- Sensitive Data Exposure</span></td>
+                            <td class="txt-oflo">Many web applications and APIs do not properly protect sensitive data, such as financial,
+                                    healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit
+                                    card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra
+                                    protection, such as encryption at rest or in transit, and requires special precautions when
+                                    exchanged with the browser.</td>
+                                                
+                        </tr>
+                        <tr>
+                            <td><span class="font-medium">A4:2017-XML External  Entities (XXE)</span></td>
+                            <td class="txt-oflo">Many older or poorly configured XML processors evaluate external entity references within XML
+                                    documents. External entities can be used to disclose internal files using the file URI handler,
+                                    internal file shares, internal port scanning, remote code execution, and denial of service attacks.</td>
+                                                
+                        </tr>
+                        <tr>
+                            <td><span class="font-medium">A5:2017-Broken Access Control</span></td>
+                            <td class="txt-oflo">Restrictions on what authenticated users are allowed to do are often not properly enforced.
+                                    Attackers can exploit these flaws to access unauthorized functionality and/or data, such as access
+                                    other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.</td>
+                                                
+                        </tr>
+                        <tr>
+                            <td><span class="font-medium">A6:2017-Security Misconfiguration</span></td>
+                            <td class="txt-oflo">Security misconfiguration is the most commonly seen issue. This is commonly a result of insecure
+                                    default configurations, incomplete or ad hoc configurations, open cloud storage, misconfigured
+                                    HTTP headers, and verbose error messages containing sensitive information. Not only must all
+                                    operating systems, frameworks, libraries, and applications be securely configured, but they must
+                                    be patched and upgraded in a timely fashion.</td>
+                                                
+                        </tr>
+                        <tr>
+                            <td><span class="font-medium">A7:2017-
+                                    Cross-Site
+                                    Scripting (XSS)</span></td>
+                            <td class="txt-oflo">XSS flaws occur whenever an application includes untrusted data in a new web page without
+                                    proper validation or escaping, or updates an existing web page with user-supplied data using a
+                                    browser API that can create HTML or JavaScript. XSS allows attackers to execute scripts in the
+                                    victim’s browser which can hijack user sessions, deface web sites, or redirect the user to
+                                    malicious sites.
+                                    </td>
+                                                    
+                        </tr>
+                        <tr>
+                            <td><span class="font-medium">A8:2017-
+                                    Insecure
+                                    Deserialization</span></td>
+                            <td class="txt-oflo">Insecure deserialization often leads to remote code execution. Even if deserialization flaws do not
+                                    result in remote code execution, they can be used to perform attacks, including replay attacks,
+                                    injection attacks, and privilege escalation attacks. </td>
+                                                    
+                        </tr>
+                        <tr>
+                                <td><span class="font-medium">A9:2017-Using Components with Known vulnerabilities</span></td>
+                            <td class="txt-oflo">Components, such as libraries, frameworks, and other software modules, run with the same
+                                    privileges as the application. If a vulnerable component is exploited, such an attack can facilitate
+                                    serious data loss or server takeover. Applications and APIs using components with known
+                                    vulnerabilities may undermine application defenses and enable various attacks and impacts. </td>
+                                                    
+                        </tr>
+                        <tr>
+                            <td><span class="font-medium">A10:2017-Insufficient Logging & Monitoring</span></td>
+                            <td class="txt-oflo">Insufficient logging and monitoring, coupled with missing or ineffective integration with incident
+                                    response, allows attackers to further attack systems, maintain persistence, pivot to more systems,
+                                    and tamper, extract, or destroy data. Most breach studies show time to detect a breach is over
+                                    200 days, typically detected by external parties rather than internal processes or monitoring. </td>
+                                                    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <footer class="footer text-center">
+                All Rights Reserved by Np_Complete!
+                
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="../../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
+</body>
+
+</html>
